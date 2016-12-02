@@ -16,16 +16,16 @@ namespace StudentManagement.Api.Migrations
 
         protected override void Seed(StudentManagement.Api.StudentManagementApiContext context)
         {
-            // Add grades
-            var grades = new List<Grades>{
-                new Grades { GradeId = 1, Grade = "AAA", CreatedOn = DateTime.Now, ModifiedOn = DateTime.Now },
-                new Grades { GradeId = 1, Grade = "BBB", CreatedOn = DateTime.Now, ModifiedOn = DateTime.Now },
-                new Grades { GradeId = 1, Grade = "CCC", CreatedOn = DateTime.Now, ModifiedOn = DateTime.Now },
-                new Grades { GradeId = 1, Grade = "DDD", CreatedOn = DateTime.Now, ModifiedOn = DateTime.Now }
-            };
+            //// Add grades
+            //var grades = new List<Grades>{
+            //    new Grades { GradeId = 1, Grade = "AAA", CreatedOn = DateTime.Now, ModifiedOn = DateTime.Now },
+            //    new Grades { GradeId = 1, Grade = "BBB", CreatedOn = DateTime.Now, ModifiedOn = DateTime.Now },
+            //    new Grades { GradeId = 1, Grade = "CCC", CreatedOn = DateTime.Now, ModifiedOn = DateTime.Now },
+            //    new Grades { GradeId = 1, Grade = "DDD", CreatedOn = DateTime.Now, ModifiedOn = DateTime.Now }
+            //};
 
-            grades.ForEach(s => context.Grades.Add(s));
-            context.SaveChanges();
+            //grades.ForEach(s => context.Grades.Add(s));
+            //context.SaveChanges();
         }
     }
 }

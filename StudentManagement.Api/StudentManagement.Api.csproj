@@ -184,6 +184,10 @@
     <Compile Include="Migrations\201611290809120_Initial.Designer.cs">
       <DependentUpon>201611290809120_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612021017276_SeedGradeTable.cs" />
+    <Compile Include="Migrations\201612021017276_SeedGradeTable.Designer.cs">
+      <DependentUpon>201612021017276_SeedGradeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Grades.cs" />
@@ -285,6 +289,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201611290809120_Initial.resx">
       <DependentUpon>201611290809120_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612021017276_SeedGradeTable.resx">
+      <DependentUpon>201612021017276_SeedGradeTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
