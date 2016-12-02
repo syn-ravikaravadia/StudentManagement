@@ -51,8 +51,6 @@
             // do API call 
             var deferred = $q.defer();
 
-            //$http.defaults.headers.post['Content-Type'] = 'application/json';
-
             // http post call 
             $http.put(serviceUrl + "api/students/updatestudent/", studentDetails).success(function (response) {
 
