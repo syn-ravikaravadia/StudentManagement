@@ -1,0 +1,76 @@
+﻿<div class="form-init">
+    <h1>Student</h1>
+    <form name="student" novalidate role="form">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    First Name
+                </div>
+                <div class="col-sm-6">
+                    <input class="form-control" type="text" id="firstname" label="firstname" name="firstname" ng-model="vm.student.FirstName" ng-pattern="alphabetsRegex"
+                           ng-maxlength="maxlength" placeholder="Enter first name" required />
+                    <span class="error" ng-show="student.firstname.$touched && student.firstname.$error.required">First name is required.</span>
+                    <span class="error" ng-show="student.firstname.$touched && student.firstname.$error.pattern">Only alphabets are allowed.</span>
+                    <span class="error" ng-show="student.firstname.$touched && student.firstname.$error.maxlength">Maximum 15 characters are allowed.</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    Last Name
+                </div>
+                <div class="col-sm-6">
+                    <input class="form-control" type="text" id="lastname" label="lastname" name="lastname" ng-model="vm.student.LastName" ng-pattern="alphabetsRegex"
+                           ng-maxlength="maxlength" placeholder="Enter last name" required />
+                    <span class="error" ng-show="student.lastname.$touched && student.lastname.$error.required">Last name is required.</span>
+                    <span class="error" ng-show="student.lastname.$touched && student.lastname.$error.pattern">Only alphabets are allowed.</span>
+                    <span class="error" ng-show="student.lastname.$touched && student.lastname.$error.maxlength">Maximum 15 characters are allowed.</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    Grade
+                </div>
+                <div class="col-sm-3">
+                    <!--<select id="studentGrade" name="studentGrade" ng-model="vm.student.SelectedGrade" class="form-control" placeholder="Select grade">
+                        <option ng-repeat="x in grades" ng-value="x.GradeId">{{x.Grade}}</option>
+                    </select>-->
+                    <select class="form-control" ng-model="vm.student.GradeId" ng-options="x.GradeId as x.Grade for x in grades"></select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    Birth Date
+                </div>
+                <div class="col-sm-3">
+                    <md-input-container flex class="datepicker">
+                        <input class="form-control" type="date" style='z-index:9990' id="birthdate" name="birthdate" ng-model="vm.student.BirthDate"
+                               required min="{{minDate | date:'yyyy-MM-dd'}}" max="{{maxDate | date:'yyyy-MM-dd'}}" data-polyfill="all" validate />
+                    </md-input-container>
+                    <span class="error" ng-show="student.birthdate.$touched && student.birthdate.$error.required">Birth date is required.</span>
+                    <span class="error" ng-show="student.birthdate.$touched && student.birthdate.$error.date">Invalid date entered</span>
+                    <span class="error" ng-show="student.birthdate.$touched && student.birthdate.$error.min">Selected date is not in a valid range.</span>
+                    <span class="error" ng-show="student.birthdate.$touched && student.birthdate.$error.max">Selected date is not in a valid range.</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-3">
+                    <!--<input ng-disabled="student.$invalid" class="btn btn-primary" value="Submit" />-->
+                    <!--<md-button ng-disabled="student.$invalid" class="btn btn-primary" ng-click="SubmitStudent()">Submit</md-button>-->
+                    <!-- &&--> 
+                    <md-button ng-disabled="student.$invalid" class="btn btn-primary" ng-click="student.$valid && vm.SaveStudent(vm.student)">{{ vm.ActionText }}</md-button>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

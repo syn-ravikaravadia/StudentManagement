@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement", "StudentManagement\StudentManagement.csproj", "{AF397A0A-EAE0-44E5-88E5-53ADF66B0139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement.Api", "StudentManagement.Api\StudentManagement.Api.csproj", "{4295F8B3-D5F3-4435-AB2E-D5CFA200555D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF397A0A-EAE0-44E5-88E5-53ADF66B0139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF397A0A-EAE0-44E5-88E5-53ADF66B0139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF397A0A-EAE0-44E5-88E5-53ADF66B0139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF397A0A-EAE0-44E5-88E5-53ADF66B0139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4295F8B3-D5F3-4435-AB2E-D5CFA200555D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4295F8B3-D5F3-4435-AB2E-D5CFA200555D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4295F8B3-D5F3-4435-AB2E-D5CFA200555D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4295F8B3-D5F3-4435-AB2E-D5CFA200555D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
